@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Dp0VmWDNCGCXHpPQtj1zptn+8ehiuHmVj7z8LKryCA814y8RZR8K2r46VBUosw81aZS+Bpz/tj6vlaP6efXSzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Domeg\\OneDrive\\Рабочий стол\\учеба\\курсач\\курсач.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Domeg\\.nuget\\packages\\materialdesigncolors\\2.1.2\\materialdesigncolors.2.1.2.nupkg.sha512",
+    "C:\\Users\\Domeg\\.nuget\\packages\\materialdesignthemes\\4.8.0\\materialdesignthemes.4.8.0.nupkg.sha512",
+    "C:\\Users\\Domeg\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512"
+  ],
+  "logs": []
+}

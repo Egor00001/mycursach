@@ -1,0 +1,418 @@
+﻿<Page x:Class="CW.Test.View.Pages.TaskPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:CW.Test.View.Pages"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d"
+      FontFamily="Consolas"
+      d:DesignHeight="600"
+      d:DesignWidth="800">
+
+    <Grid Margin="0,0,1,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="170"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.ColumnSpan="2"
+               Source="/Images/main_bg.jpg"
+               Stretch="UniformToFill" Margin="0,-5,2,0"/>
+        <Border Background="#002C23"
+                Grid.Column="0"
+                CornerRadius="15" Margin="10,10,619,10"
+                Width="167" Grid.ColumnSpan="2"/>
+        <Button Style="{DynamicResource menuButton}"
+                        x:Name="BtnTask1"
+                        Click="BtnTask1_Click"
+                        Background="#00332A"
+                        Foreground="#ececec"
+                        Height="50"
+                        Width="168"
+                        Margin="11,21,620,529" Grid.ColumnSpan="2">
+
+            <StackPanel>
+                <materialDesign:PackIcon Kind="TaskAdd"
+                                                 Style="{DynamicResource menuButtonIcon}"/>
+                <TextBlock Text="Задание №1"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask2"
+                        Click="BtnTask2_Click"
+                        RenderTransformOrigin="0.5,0.5"
+                        Margin="11,71,620,479"
+                        Background="#00332A"
+                        Foreground="#ececec"
+                        Height="50"
+                        Grid.ColumnSpan="2"
+                        Width="168">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.488"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.009"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №2"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask3"
+                        Click="BtnTask3_Click"
+                        Margin="11,121,620,429"
+                        Background="#00332A"
+                        Foreground="#ececec"
+                        Height="50"
+                        Width="168" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №3"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask4"
+                        Click="BtnTask4_Click"
+                        Margin="11,171,620,379"
+                        Background="#00332A"
+                        Foreground="#ececec"
+                        Height="50"
+                        Width="168" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №4"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask5"
+                        Click="BtnTask5_Click"
+                        Height="50"
+                        Width="168"
+                        Margin="11,221,620,329"
+                        Background="#00332A"
+                        Foreground="#ececec" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №5"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask6"
+                        Click="BtnTask6_Click"
+                        Margin="11,271,620,279"
+                        Background="#00332A"
+                        Foreground="#ececec"
+                        Height="50"
+                        Width="168" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №6"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask7"
+                       Click="BtnTask7_Click"
+                       Height="50"
+                       Width="168"
+                       Margin="11,321,620,229"
+                       Background="#00332A"
+                       Foreground="#ececec" Grid.ColumnSpan="2">
+            <StackPanel Height="31">
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №7"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask8"
+                        Click="BtnTask8_Click"
+                        Height="50"
+                        Width="168"
+                        Margin="11,371,620,179"
+                        Background="#00332A"
+                        Foreground="#ececec" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №8"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask9"
+                       Click="BtnTask9_Click"
+                       Height="50"
+                       Width="168"
+                       Margin="11,421,620,129"
+                       Background="#00332A"
+                       Foreground="#ececec" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №9"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                x:Name="BtnTask10"
+                      Click="BtnTask10_Click"
+                      Height="50"
+                      Width="168"
+                      Margin="11,471,620,79"
+                      Background="#00332A"
+                      Foreground="#ececec" Grid.ColumnSpan="2">
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Taskadd"
+                                                 Style="{DynamicResource menubuttonIcon}"/>
+                <TextBlock Text="Задание №10"
+                                   Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{DynamicResource menuButton}"
+                        x:Name="BtnLogout"
+                        Click="BtnLogout_Click"
+                        RenderTransformOrigin="0.5,0.449"
+                        Margin="11,521,620,19"
+                        Background="#000E0C"
+                        Foreground="#ececec"
+                        Height="60"
+                        Width="168" Grid.ColumnSpan="2">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <StackPanel>
+                <materialDesign:PackIcon Kind="Power"
+                                  Style="{DynamicResource menuButtonIcon}"/>
+                <TextBlock Text="Выйти"
+                           Style="{DynamicResource menuButtonText}"/>
+            </StackPanel>
+        </Button>
+        <Grid Margin="15,-5,0,1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="640.104" />
+                <RowDefinition Height="5.896"/>
+                <RowDefinition Height="14*"/>
+                <RowDefinition Height="25*"/>
+            </Grid.RowDefinitions>
+            <Border
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="600"
+                Height="50"
+                Background="#002C23"
+                CornerRadius="15"
+                Padding="5"
+                Effect="{StaticResource MaterialDesignElevationShadow1}" RenderTransformOrigin="0.5,0.5" Margin="0,34,0,0" Grid.Row="9">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0"/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+                <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="Задание №1 - Дана вещественная матрица 8*3. Вычислить среднее арифметическое элементов матрицы"
+                           FontSize="15"
+                           TextWrapping="Wrap"
+                           Foreground="White"
+                           FontWeight="SemiBold" Height="39" Width="565"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="1"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,89,0,0" Grid.RowSpan="9">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №2 - Дана целочисленная матрица 4*5. Сформировать одномерный массив как сумму элементов столбцов матрицы"
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" RenderTransformOrigin="0.497,0.242" Height="35" Width="583"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,144,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №3 - Дана вещественная матрица 3*6. Вычислить сумму максимального и минимального элементов матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,199,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №4 - Дана вещественная матрица 6*4. Сформировать одномерный массив как максимальные элементы строк матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="560" RenderTransformOrigin="0.502,0.541" Height="44"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="4"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,254,0,0" Grid.RowSpan="6">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №5 - Дана целочисленная матрица 6*6. Вычислить сумму максимального и минимального элементов главной диагонали матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="623" Height="40"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,309,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №6 - Дана целочисленная матрица 7*5. Сформировать одномерный массив как сумму отрицательных элементов строк матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="552"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="6"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,364,0,0" Grid.RowSpan="4">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №7 - Дана вещественная матрица 5*5. Вычислить среднее арифметическое элементов побочной диагонали матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="550" Height="37"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,419,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №8 - Дана целочисленная матрица 6*6. Вычислить поизведение элементов главной диагонали матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Height="34" Width="539"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,474,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №9 - Дана целочисленная матрица 5*8. Получить вектор, как столбец матрицы с минимальной суммой элементов"
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="546" Height="37"/>
+                </StackPanel>
+            </Border>
+            <Border Grid.Row="9"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Width="600"
+                    Height="50"
+                    Background="#002C23"
+                    CornerRadius="15"
+                    Padding="5"
+                    Effect="{StaticResource MaterialDesignElevationShadow1}" Margin="0,529,0,0">
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="Задание №10 - Дана вещественная матрица 7*7. Поменять местами элементы главной ии побочной диагоналей матрицы."
+                               FontSize="14"
+                               TextWrapping="Wrap"
+                               Foreground="white"
+                               FontWeight="SemiBold" Width="530"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+
+</Page>
